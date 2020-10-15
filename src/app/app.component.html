@@ -1,0 +1,28 @@
+<h1 align="center">
+  <b>
+    <a href="/">Introduction to ThreeJS</a>
+  </b>
+</h1>
+
+<div align="center">
+  <div class="three-examples-row">
+    <a routerLink="/webgl" mat-flat-button color="primary">WebGL</a>
+    <a routerLink="/simple" mat-flat-button color="primary">Simple</a>
+    <a routerLink="/primitives" mat-flat-button color="primary">Primitives</a>
+    <a routerLink="/scenegraph" mat-flat-button color="primary">Scenegraph</a>
+    <a routerLink="/materials" mat-flat-button color="primary">Materials</a>
+    <a routerLink="/textures" mat-flat-button color="primary">Textures</a>
+    <a routerLink="/lcr" mat-flat-button color="primary">Lights, Camera & Renderer</a>
+    <a routerLink="/animations" mat-flat-button color="primary">Animations</a>
+  </div>
+</div>
+
+<hr />
+{{ routerURL }}
+<div *ngIf="router.url == '/'" id="default" class="render-container">
+  <h1 align="center">Three JS Techtonic</h1>
+  <h1 align="center">By</h1>
+  <h1 align="center">Vijay Yellepeddi</h1>
+</div>
+
+<router-outlet></router-outlet>
